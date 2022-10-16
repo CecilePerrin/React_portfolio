@@ -5,7 +5,7 @@
   align-items: center;
 
   padding: 1rem 2rem;
-  background: rgba(193, 91, 202, 0.25);
+  background: var(--black-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -18,8 +18,8 @@
   justify-content: flex-start;
   align-items: center;
    img{
-    width: 180px;
-    height: 40px;
+    width: 200px;
+    height: 80px;
 
     @media screen and (min-width: 2000px){
       width: 180px;
@@ -62,4 +62,18 @@
     }
    } 
   }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
 }
